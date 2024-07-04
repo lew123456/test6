@@ -8,7 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/" // This is not necessary for Docker deployments, but you can keep it for clarity.
+      "dest": "/"
     }
   ]
 }
