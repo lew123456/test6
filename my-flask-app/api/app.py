@@ -5,12 +5,12 @@ import numpy as np
 app = Flask(__name__)
 
 # 加载模型
-with open('./api/model.pkl', 'rb') as file:
+with open('api/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():

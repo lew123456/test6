@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # 安装所有需要的包
-RUN pip install --no-cache-dir -r api/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 启动应用
-CMD ["python", "-m", "api.app"]
+CMD ["python", "api/app.py"]
