@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "./Dockerfile",
+      "src": "Dockerfile",
       "use": "@vercel/docker"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/" // This is not necessary for Docker deployments, but you can keep it for clarity.
     }
   ]
 }
