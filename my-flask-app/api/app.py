@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # 加载模型
-with open('api/model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 @app.route('/')
